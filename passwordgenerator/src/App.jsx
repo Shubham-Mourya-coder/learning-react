@@ -31,6 +31,7 @@ function App() {
     generatePassword();
   }, [length, numberAllowed, specialCharAllowed]);
 
+  //  Copy to clipboard function logic
   const copyPasswordToClipboard = async() => {
     try {
       await navigator.clipboard.writeText(buttonText);
